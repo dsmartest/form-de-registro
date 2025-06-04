@@ -9,8 +9,7 @@ git clone https://github.com/dsmartest/form-de-registro.git
 cd form-de-registro
 
 Desplegar el contenedor:
-docker build -t nombre-de-la-imagen-a-crear . # Crear la imagen y dar un nombre a la imagen a partir del contenido del directorio actual.
-docker run -d -p 8080:80 --name nombre-del-app-o-contenedor nombre-de-la-imagen-a-crear # Desplegar el contenedor con nombre "nombre-del-app-o-contenedor" a partir de la imagen "nombre-de-la-imagen-a-crear"
+docker-compose up --build -d
 
 Visualizar el proyecto:
 abrir en un navegador http://localhost:8080
